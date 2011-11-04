@@ -71,6 +71,6 @@
 
 - (void)dealloc {
     QRcode_free(qrcode_);
-    //[super dealloc];  /// LLVM ARC Support
+    [super dealloc];
 }
 @end
