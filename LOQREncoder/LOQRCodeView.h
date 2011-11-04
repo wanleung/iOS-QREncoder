@@ -1,6 +1,5 @@
 //
-//  QRCodeView.h
-//  CoffeeShop
+//  LOQRCodeView.h
 //
 //  Created by Wan Leung Wong <wanleung@linkomnia.com> on 5/9/11.
 //  Copyright 2011 LinkOmnia Ltd. 

@@ -1,8 +1,7 @@
 //
-//  LOQRCodeKit.h
-//  LOQRCodeKit
+//  LOQREncoder.h
 //
-//  Created by Wan Leung Wong on 7/9/11.
+//  Created by Wan Leung Wong <wanleung@linkomnia.com> on 7/9/11.
 //  Copyright 2011 LinkOmnia Ltd. 
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
