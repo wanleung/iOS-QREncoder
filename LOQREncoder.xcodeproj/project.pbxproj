@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		BC7EF00C14645B9E003C2170 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC7EF00A14645B9E003C2170 /* InfoPlist.strings */; };
+		BC7EF03514645C31003C2170 /* LOQREncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7EF03214645C31003C2170 /* LOQREncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7EF03614645C31003C2170 /* LOQRCodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7EF03314645C31003C2170 /* LOQRCodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7EF03714645C31003C2170 /* LOQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7EF03414645C31003C2170 /* LOQRCodeView.m */; };
+		BC7EF03914645CE3003C2170 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EF03814645CE3003C2170 /* Foundation.framework */; };
+		BC7EF03B14645CFE003C2170 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EF03A14645CFE003C2170 /* QuartzCore.framework */; };
+		BC7EF06B146465B3003C2170 /* libqrencode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7EF06A146465B3003C2170 /* libqrencode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC7EF00514645B9E003C2170 /* LOQREncoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOQREncoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC7EF00914645B9E003C2170 /* LOQREncoder-Info.plist */ = {isa = PBXFileReference; path = "LOQREncoder-Info.plist"; sourceTree = "<group>"; };
+		BC7EF00914645B9E003C2170 /* LOQREncoder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LOQREncoder-Info.plist"; sourceTree = "<group>"; };
 		BC7EF00B14645B9E003C2170 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BC7EF00D14645B9E003C2170 /* LOQREncoder-Prefix.pch */ = {isa = PBXFileReference; path = "LOQREncoder-Prefix.pch"; sourceTree = "<group>"; };
+		BC7EF00D14645B9E003C2170 /* LOQREncoder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOQREncoder-Prefix.pch"; sourceTree = "<group>"; };
+		BC7EF03214645C31003C2170 /* LOQREncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOQREncoder.h; sourceTree = "<group>"; };
+		BC7EF03314645C31003C2170 /* LOQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOQRCodeView.h; sourceTree = "<group>"; };
+		BC7EF03414645C31003C2170 /* LOQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOQRCodeView.m; sourceTree = "<group>"; };
+		BC7EF03814645CE3003C2170 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC7EF03A14645CFE003C2170 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BC7EF06A146465B3003C2170 /* libqrencode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqrencode.a; path = "third-party/libqrencode/lib/libqrencode.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7EF03B14645CFE003C2170 /* QuartzCore.framework in Frameworks */,
+				BC7EF03914645CE3003C2170 /* Foundation.framework in Frameworks */,
+				BC7EF06B146465B3003C2170 /* libqrencode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7EF00714645B9E003C2170 /* LOQREncoder */,
+				BC7EF06C146465D8003C2170 /* Frameworks */,
 				BC7EF00614645B9E003C2170 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +63,9 @@
 		BC7EF00714645B9E003C2170 /* LOQREncoder */ = {
 			isa = PBXGroup;
 			children = (
+				BC7EF03214645C31003C2170 /* LOQREncoder.h */,
+				BC7EF03314645C31003C2170 /* LOQRCodeView.h */,
+				BC7EF03414645C31003C2170 /* LOQRCodeView.m */,
 				BC7EF00814645B9E003C2170 /* Supporting Files */,
 			);
 			path = LOQREncoder;
@@ -62,6 +81,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BC7EF06C146465D8003C2170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC7EF06A146465B3003C2170 /* libqrencode.a */,
+				BC7EF03A14645CFE003C2170 /* QuartzCore.framework */,
+				BC7EF03814645CE3003C2170 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -69,6 +98,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7EF03514645C31003C2170 /* LOQREncoder.h in Headers */,
+				BC7EF03614645C31003C2170 /* LOQRCodeView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7EF03714645C31003C2170 /* LOQRCodeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +260,7 @@
 		BC7EF01114645B9E003C2170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -236,9 +269,17 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LOQREncoder/LOQREncoder-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/third-party/libqrencode/include",
+				);
 				INFOPLIST_FILE = "LOQREncoder/LOQREncoder-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/third-party/libqrencode/lib\"",
+				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -251,6 +292,7 @@
 		BC7EF01214645B9E003C2170 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -259,9 +301,17 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LOQREncoder/LOQREncoder-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/third-party/libqrencode/include",
+				);
 				INFOPLIST_FILE = "LOQREncoder/LOQREncoder-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/third-party/libqrencode/lib\"",
+				);
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				PRODUCT_NAME = "$(TARGET_NAME)";
