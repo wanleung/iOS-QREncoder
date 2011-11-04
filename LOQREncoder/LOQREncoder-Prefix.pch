@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LOQREncoder' target in the 'LOQREncoder' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
