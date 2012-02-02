@@ -1,0 +1,33 @@
+LOQREncoder
+
+Objective-C QRCode Encode Framework Library for iOS
+
+This is an QRCode Encode Framework in Objective-C for iOS.
+Dependencies
+
+libqrencode (include in third-party folder) Foundation.framework QuartzCore.framework
+Install
+
+1. open the project by Xcode 
+2. build the project. 
+3. on the left sidebar, there is a icon called "LOQRencoder.framwork" 
+   under group Products. Drag it into your Xcode Project. 
+
+Code Example: 
+
+    #import <LOQREncoder/LOQREncoder.h>
+    ... 
+
+        LOQRCodeView *qrview = [[LOQRCodeView alloc] initWithEncodeString:textfield.text]; 
+        [self.view addSubview:qrview];
+    ...
+
+License
+Apache License 2.0
+
+Authors
+LinkOmnia Ltd.
+
+Contact
+Wan Leung Wong (wanleung@linkomnia.com)
+
